@@ -1,0 +1,6 @@
+how to create java swing application using netbeans 8.0.2?
+
+how to create a package?
+how to create a java class in package?
+difference between java interface and java class?
+what is a abstract class in java? 

@@ -1,0 +1,49 @@
+------- Flows -------
+
+(PATIENT / USER)
+Patient / User Registration 
+Edit Patient / User (contact no already exist)
+Delete Patient / User
+Search Patient / User 
+
+(REPORT)
+
+
+(MEDICAL TREATMENT HISTORY)
+Add   <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Edit 
+Delete
+View
+
+(SMS SERVICE)
+Send SMS
+
+(TREAD FOR TRACKING SENSOR DATA)
+
+(REMINDER)
+Reminder to remind patient to get medicine or track health status periodically 
+
+(GUARDIAN NOTIFICATION)
+Add guardian
+Edit guardian
+Delete guardian
+Search guardian
+Send SMS to guardian - Notification msg
+
+
+
+
+
+
+
+========================================================================
+Color Codes
+FB - 58,89,152
+Twitter - 0, 172,238
+
+Lib. Used 
+GSON
+
+
+
+	
