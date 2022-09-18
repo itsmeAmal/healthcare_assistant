@@ -47,15 +47,25 @@ public class Home extends javax.swing.JFrame {
         jLabel13 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
-        jPanel5 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         lblWorldIcon = new javax.swing.JLabel();
         lblUserName = new javax.swing.JLabel();
-        lblAddress = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jPanel6 = new javax.swing.JPanel();
+        lblAddress1 = new javax.swing.JLabel();
+        lblAddress2 = new javax.swing.JLabel();
+        lblAddress3 = new javax.swing.JLabel();
+        lblAddress4 = new javax.swing.JLabel();
+        lblAddress5 = new javax.swing.JLabel();
+        lblAddress6 = new javax.swing.JLabel();
+        lblAddress7 = new javax.swing.JLabel();
+        lblAddress8 = new javax.swing.JLabel();
+        lblAddress9 = new javax.swing.JLabel();
+        jPanel5 = new javax.swing.JPanel();
+        lblAddress10 = new javax.swing.JLabel();
+        lblAddress = new javax.swing.JLabel();
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -79,7 +89,6 @@ public class Home extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
         jPanel3.setBackground(new java.awt.Color(229, 229, 255));
-        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel4.setBackground(new java.awt.Color(0, 0, 0));
         jPanel4.setMaximumSize(new java.awt.Dimension(1368, 51));
@@ -167,7 +176,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel17)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 317, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         jPanel4Layout.setVerticalGroup(
@@ -185,33 +194,202 @@ public class Home extends javax.swing.JFrame {
             .addComponent(jLabel11, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        jPanel3.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1368, 51));
-
-        jPanel5.setBackground(new java.awt.Color(255, 255, 255));
-
-        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
-        jPanel5.setLayout(jPanel5Layout);
-        jPanel5Layout.setHorizontalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 770, Short.MAX_VALUE)
-        );
-        jPanel5Layout.setVerticalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 690, Short.MAX_VALUE)
-        );
-
-        jPanel3.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(598, 46, 770, 690));
-
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/pha/img3/rsz_profile_icon.png"))); // NOI18N
-        jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, 170, 190));
 
         lblWorldIcon.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         lblWorldIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/pha/img3/rsz_world_icon.png"))); // NOI18N
-        jPanel3.add(lblWorldIcon, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 140, 30, 30));
 
         lblUserName.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         lblUserName.setText("User Name");
-        jPanel3.add(lblUserName, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 140, 290, 30));
+
+        jLabel18.setBackground(new java.awt.Color(204, 204, 204));
+        jLabel18.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel18.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel18.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/pha/img3/rsz_share_profile.png"))); // NOI18N
+
+        jLabel20.setBackground(new java.awt.Color(204, 204, 204));
+        jLabel20.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel20.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel20.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/pha/img3/rsz_edit_profile_btn.png"))); // NOI18N
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/pha/img3/rsz_manu_sub_menu_info_btn.png"))); // NOI18N
+
+        jPanel6.setBackground(new java.awt.Color(255, 255, 255));
+
+        lblAddress1.setBackground(new java.awt.Color(204, 204, 204));
+        lblAddress1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        lblAddress1.setForeground(new java.awt.Color(153, 153, 153));
+        lblAddress1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        lblAddress1.setText("Blood Pressure");
+        lblAddress1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblAddress1MouseClicked(evt);
+            }
+        });
+
+        lblAddress2.setBackground(new java.awt.Color(204, 204, 204));
+        lblAddress2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        lblAddress2.setForeground(new java.awt.Color(153, 153, 153));
+        lblAddress2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblAddress2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/pha/img3/rsz_1info_eye.png"))); // NOI18N
+        lblAddress2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblAddress2MouseClicked(evt);
+            }
+        });
+
+        lblAddress3.setBackground(new java.awt.Color(204, 204, 204));
+        lblAddress3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        lblAddress3.setForeground(new java.awt.Color(153, 153, 153));
+        lblAddress3.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        lblAddress3.setText("Body Temperature");
+        lblAddress3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblAddress3MouseClicked(evt);
+            }
+        });
+
+        lblAddress4.setBackground(new java.awt.Color(204, 204, 204));
+        lblAddress4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        lblAddress4.setForeground(new java.awt.Color(153, 153, 153));
+        lblAddress4.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        lblAddress4.setText("Last Updated");
+        lblAddress4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblAddress4MouseClicked(evt);
+            }
+        });
+
+        lblAddress5.setBackground(new java.awt.Color(204, 204, 204));
+        lblAddress5.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        lblAddress5.setForeground(new java.awt.Color(153, 153, 153));
+        lblAddress5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblAddress5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/pha/img3/rsz_info_bp.png"))); // NOI18N
+        lblAddress5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblAddress5MouseClicked(evt);
+            }
+        });
+
+        lblAddress6.setBackground(new java.awt.Color(204, 204, 204));
+        lblAddress6.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        lblAddress6.setForeground(new java.awt.Color(153, 153, 153));
+        lblAddress6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblAddress6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/pha/img3/rsz_info_temp.png"))); // NOI18N
+        lblAddress6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblAddress6MouseClicked(evt);
+            }
+        });
+
+        lblAddress7.setBackground(new java.awt.Color(204, 204, 204));
+        lblAddress7.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        lblAddress7.setForeground(new java.awt.Color(153, 153, 153));
+        lblAddress7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblAddress7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/pha/img3/rsz_11blue-btn_-_transparent.png"))); // NOI18N
+        lblAddress7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblAddress7MouseClicked(evt);
+            }
+        });
+
+        lblAddress8.setBackground(new java.awt.Color(204, 204, 204));
+        lblAddress8.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        lblAddress8.setForeground(new java.awt.Color(153, 153, 153));
+        lblAddress8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblAddress8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/pha/img3/rsz_11blue-btn_-_transparent.png"))); // NOI18N
+        lblAddress8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblAddress8MouseClicked(evt);
+            }
+        });
+
+        lblAddress9.setBackground(new java.awt.Color(204, 204, 204));
+        lblAddress9.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        lblAddress9.setForeground(new java.awt.Color(153, 153, 153));
+        lblAddress9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblAddress9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/pha/img3/rsz_11blue-btn_-_transparent.png"))); // NOI18N
+        lblAddress9.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblAddress9MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
+        jPanel6.setLayout(jPanel6Layout);
+        jPanel6Layout.setHorizontalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(74, 74, 74)
+                        .addComponent(lblAddress4, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(62, 62, 62)
+                        .addComponent(lblAddress8, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 91, Short.MAX_VALUE)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addComponent(lblAddress5)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(lblAddress1, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
+                        .addComponent(lblAddress7, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(40, 40, 40)))
+                .addGap(54, 54, 54))
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(35, 35, 35)
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(lblAddress2, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblAddress6, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(lblAddress3, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(64, 64, 64)
+                        .addComponent(lblAddress9, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel6Layout.setVerticalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGap(52, 52, 52)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(lblAddress1)
+                        .addComponent(lblAddress2)
+                        .addComponent(lblAddress4))
+                    .addComponent(lblAddress5))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblAddress7)
+                    .addComponent(lblAddress8))
+                .addGap(43, 43, 43)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblAddress3)
+                    .addComponent(lblAddress6))
+                .addGap(18, 18, 18)
+                .addComponent(lblAddress9)
+                .addContainerGap(79, Short.MAX_VALUE))
+        );
+
+        jPanel5.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        lblAddress10.setBackground(new java.awt.Color(204, 204, 204));
+        lblAddress10.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        lblAddress10.setForeground(new java.awt.Color(153, 153, 153));
+        lblAddress10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblAddress10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/pha/img3/rsz_1blue_ball_arrow.png"))); // NOI18N
+        lblAddress10.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblAddress10MouseClicked(evt);
+            }
+        });
+        jPanel5.add(lblAddress10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 300, 40, -1));
 
         lblAddress.setBackground(new java.awt.Color(204, 204, 204));
         lblAddress.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -223,39 +401,67 @@ public class Home extends javax.swing.JFrame {
                 lblAddressMouseClicked(evt);
             }
         });
-        jPanel3.add(lblAddress, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 180, 300, -1));
 
-        jLabel18.setBackground(new java.awt.Color(204, 204, 204));
-        jLabel18.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel18.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel18.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/pha/img3/rsz_share_profile.png"))); // NOI18N
-        jPanel3.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 290, 190, 50));
-
-        jLabel20.setBackground(new java.awt.Color(204, 204, 204));
-        jLabel20.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel20.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel20.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/pha/img3/rsz_edit_profile_btn.png"))); // NOI18N
-        jPanel3.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 290, 190, 50));
-
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/pha/img3/rsz_manu_sub_menu_info_btn.png"))); // NOI18N
-        jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 360, 150, 30));
-
-        jPanel6.setBackground(new java.awt.Color(255, 255, 255));
-
-        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
-        jPanel6.setLayout(jPanel6Layout);
-        jPanel6Layout.setHorizontalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 480, Short.MAX_VALUE)
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGap(40, 40, 40)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel3Layout.createSequentialGroup()
+                                .addComponent(jLabel1)
+                                .addGap(20, 20, 20)
+                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(lblUserName, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(lblAddress, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(jPanel3Layout.createSequentialGroup()
+                                .addGap(10, 10, 10)
+                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel3Layout.createSequentialGroup()
+                                        .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(10, 10, 10)
+                                        .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addComponent(lblWorldIcon, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGap(50, 50, 50)
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, 798, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
-        jPanel6Layout.setVerticalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 320, Short.MAX_VALUE)
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(90, 90, 90)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGap(50, 50, 50)
+                        .addComponent(lblUserName, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(10, 10, 10)
+                        .addComponent(lblAddress)))
+                .addGap(10, 10, 10)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(50, 50, 50)
+                .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(140, 140, 140)
+                .addComponent(lblWorldIcon, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(46, 46, 46)
+                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, 685, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(360, 360, 360)
+                .addComponent(jLabel2))
+            .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
-
-        jPanel3.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 390, 480, 320));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -298,6 +504,46 @@ public class Home extends javax.swing.JFrame {
     private void lblAddressMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblAddressMouseClicked
         // TODO add your handling code here:
     }//GEN-LAST:event_lblAddressMouseClicked
+
+    private void lblAddress1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblAddress1MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblAddress1MouseClicked
+
+    private void lblAddress2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblAddress2MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblAddress2MouseClicked
+
+    private void lblAddress3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblAddress3MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblAddress3MouseClicked
+
+    private void lblAddress4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblAddress4MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblAddress4MouseClicked
+
+    private void lblAddress5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblAddress5MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblAddress5MouseClicked
+
+    private void lblAddress6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblAddress6MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblAddress6MouseClicked
+
+    private void lblAddress7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblAddress7MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblAddress7MouseClicked
+
+    private void lblAddress8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblAddress8MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblAddress8MouseClicked
+
+    private void lblAddress9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblAddress9MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblAddress9MouseClicked
+
+    private void lblAddress10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblAddress10MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblAddress10MouseClicked
 
     /**
      * @param args the command line arguments
@@ -355,6 +601,16 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JLabel lblAddress;
+    private javax.swing.JLabel lblAddress1;
+    private javax.swing.JLabel lblAddress10;
+    private javax.swing.JLabel lblAddress2;
+    private javax.swing.JLabel lblAddress3;
+    private javax.swing.JLabel lblAddress4;
+    private javax.swing.JLabel lblAddress5;
+    private javax.swing.JLabel lblAddress6;
+    private javax.swing.JLabel lblAddress7;
+    private javax.swing.JLabel lblAddress8;
+    private javax.swing.JLabel lblAddress9;
     private javax.swing.JLabel lblUserName;
     private javax.swing.JLabel lblWorldIcon;
     // End of variables declaration//GEN-END:variables
