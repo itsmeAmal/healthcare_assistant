@@ -67,10 +67,6 @@ public class Home extends javax.swing.JFrame {
         jPanel5 = new javax.swing.JPanel();
         lblAddress10 = new javax.swing.JLabel();
         lblAddress11 = new javax.swing.JLabel();
-        lblAddress12 = new javax.swing.JLabel();
-        lblAddress13 = new javax.swing.JLabel();
-        lblAddress14 = new javax.swing.JLabel();
-        lblAddress15 = new javax.swing.JLabel();
         lblAddress = new javax.swing.JLabel();
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -420,54 +416,6 @@ public class Home extends javax.swing.JFrame {
         });
         jPanel5.add(lblAddress11, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 60, 190, 30));
 
-        lblAddress12.setBackground(new java.awt.Color(204, 204, 204));
-        lblAddress12.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        lblAddress12.setForeground(new java.awt.Color(153, 153, 153));
-        lblAddress12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblAddress12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/pha/img3/rsz_5transparent_blue_tile.png"))); // NOI18N
-        lblAddress12.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                lblAddress12MouseClicked(evt);
-            }
-        });
-        jPanel5.add(lblAddress12, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 120, 260, 250));
-
-        lblAddress13.setBackground(new java.awt.Color(204, 204, 204));
-        lblAddress13.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        lblAddress13.setForeground(new java.awt.Color(153, 153, 153));
-        lblAddress13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblAddress13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/pha/img3/rsz_5transparent_blue_tile.png"))); // NOI18N
-        lblAddress13.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                lblAddress13MouseClicked(evt);
-            }
-        });
-        jPanel5.add(lblAddress13, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 120, 260, 250));
-
-        lblAddress14.setBackground(new java.awt.Color(204, 204, 204));
-        lblAddress14.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        lblAddress14.setForeground(new java.awt.Color(153, 153, 153));
-        lblAddress14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblAddress14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/pha/img3/rsz_5transparent_blue_tile.png"))); // NOI18N
-        lblAddress14.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                lblAddress14MouseClicked(evt);
-            }
-        });
-        jPanel5.add(lblAddress14, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 370, 260, 250));
-
-        lblAddress15.setBackground(new java.awt.Color(204, 204, 204));
-        lblAddress15.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        lblAddress15.setForeground(new java.awt.Color(153, 153, 153));
-        lblAddress15.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblAddress15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/pha/img3/rsz_5transparent_blue_tile.png"))); // NOI18N
-        lblAddress15.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                lblAddress15MouseClicked(evt);
-            }
-        });
-        jPanel5.add(lblAddress15, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 370, 260, 250));
-
         jPanel3.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(568, 46, 800, 690));
 
         lblAddress.setBackground(new java.awt.Color(204, 204, 204));
@@ -568,22 +516,6 @@ public class Home extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_lblAddress11MouseClicked
 
-    private void lblAddress12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblAddress12MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_lblAddress12MouseClicked
-
-    private void lblAddress13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblAddress13MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_lblAddress13MouseClicked
-
-    private void lblAddress14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblAddress14MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_lblAddress14MouseClicked
-
-    private void lblAddress15MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblAddress15MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_lblAddress15MouseClicked
-
     /**
      * @param args the command line arguments
      */
@@ -643,10 +575,6 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel lblAddress1;
     private javax.swing.JLabel lblAddress10;
     private javax.swing.JLabel lblAddress11;
-    private javax.swing.JLabel lblAddress12;
-    private javax.swing.JLabel lblAddress13;
-    private javax.swing.JLabel lblAddress14;
-    private javax.swing.JLabel lblAddress15;
     private javax.swing.JLabel lblAddress2;
     private javax.swing.JLabel lblAddress3;
     private javax.swing.JLabel lblAddress4;
