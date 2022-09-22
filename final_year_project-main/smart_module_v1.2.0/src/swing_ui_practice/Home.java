@@ -72,7 +72,7 @@ public class Home extends javax.swing.JFrame {
         jPanel7 = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
         lblAddress = new javax.swing.JLabel();
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -448,10 +448,10 @@ public class Home extends javax.swing.JFrame {
         jLabel6.setToolTipText("<html>What is hypertension? <br>\nBlood pressure is the force exerted by circulating blood against the walls of the body’s arteries,<br> the major blood vessels in the body. Hypertension is when blood pressure is too high.<br>\n\nBlood pressure is written as two numbers. <br>The first (systolic) number represents the pressure in blood vessels when the heart contracts or beats. <br>The second (diastolic) number represents the pressure <br>in the vessels when the heart rests between beats.<br>\n\nHypertension is diagnosed if, when it is measured on two different days,<br> the systolic blood pressure readings on both days is ≥140 mmHg and/or<br> the diastolic blood pressure readings on both days is ≥90 mmHg.</html>");
         jPanel5.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 80, 360, 80));
 
-        jLabel8.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel8.setText("World Health Organization (WHO)");
-        jPanel5.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 170, -1, -1));
+        jLabel9.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel9.setText("World Health Organization (WHO)");
+        jPanel5.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 170, -1, -1));
 
         jPanel3.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(568, 46, 800, 710));
 
@@ -611,7 +611,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
