@@ -215,6 +215,7 @@ public class RegisterUser extends javax.swing.JFrame {
         jPanel2.add(txtEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 490, 336, 48));
 
         txtUsername.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 51, 255), 1, true), "Name", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12), new java.awt.Color(0, 51, 255))); // NOI18N
+        txtUsername.setMaximumSize(new java.awt.Dimension(0, 0));
         txtUsername.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtUsernameActionPerformed(evt);
@@ -362,7 +363,7 @@ public class RegisterUser extends javax.swing.JFrame {
                 jLabel1MouseClicked(evt);
             }
         });
-        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 620, 267, 42));
+        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 680, 267, 42));
 
         jPanel4.setBackground(new java.awt.Color(0, 0, 0));
         jPanel4.setMaximumSize(new java.awt.Dimension(1368, 51));
