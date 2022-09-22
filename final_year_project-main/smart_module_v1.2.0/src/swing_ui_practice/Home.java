@@ -66,7 +66,8 @@ public class Home extends javax.swing.JFrame {
         lblAddress9 = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
         lblAddress10 = new javax.swing.JLabel();
-        lblAddress11 = new javax.swing.JLabel();
+        canvas1 = new java.awt.Canvas();
+        jPanel7 = new javax.swing.JPanel();
         lblAddress = new javax.swing.JLabel();
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -403,20 +404,12 @@ public class Home extends javax.swing.JFrame {
             }
         });
         jPanel5.add(lblAddress10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 300, 40, -1));
+        jPanel5.add(canvas1, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 370, -1, -1));
 
-        lblAddress11.setBackground(new java.awt.Color(204, 204, 204));
-        lblAddress11.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        lblAddress11.setForeground(new java.awt.Color(153, 153, 153));
-        lblAddress11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblAddress11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/pha/img3/dropdown btn.png"))); // NOI18N
-        lblAddress11.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                lblAddress11MouseClicked(evt);
-            }
-        });
-        jPanel5.add(lblAddress11, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 60, 190, 30));
+        jPanel7.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanel5.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 10, -1, -1));
 
-        jPanel3.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(568, 46, 800, 690));
+        jPanel3.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(568, 46, 800, 710));
 
         lblAddress.setBackground(new java.awt.Color(204, 204, 204));
         lblAddress.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -512,10 +505,6 @@ public class Home extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_lblAddress10MouseClicked
 
-    private void lblAddress11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblAddress11MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_lblAddress11MouseClicked
-
     /**
      * @param args the command line arguments
      */
@@ -553,6 +542,7 @@ public class Home extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private java.awt.Canvas canvas1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
@@ -571,10 +561,10 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
+    private javax.swing.JPanel jPanel7;
     private javax.swing.JLabel lblAddress;
     private javax.swing.JLabel lblAddress1;
     private javax.swing.JLabel lblAddress10;
-    private javax.swing.JLabel lblAddress11;
     private javax.swing.JLabel lblAddress2;
     private javax.swing.JLabel lblAddress3;
     private javax.swing.JLabel lblAddress4;
