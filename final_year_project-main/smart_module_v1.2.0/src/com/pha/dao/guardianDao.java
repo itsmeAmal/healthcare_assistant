@@ -24,7 +24,6 @@ public interface guardianDao {
    
     ResultSet getAllGuardians()throws SQLException;
     
-    
     ResultSet getGuardianByAttribute(String attribute,String conditions,String value) throws SQLException;
     
     ResultSet getGuardianByMoreAttribute(ArrayList<String[]>attributeConditionValueList,String operator)throws SQLException;

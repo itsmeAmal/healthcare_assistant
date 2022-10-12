@@ -170,7 +170,6 @@ public class RegisterUser extends javax.swing.JFrame {
         setMaximumSize(new java.awt.Dimension(1368, 738));
         setMinimumSize(new java.awt.Dimension(1368, 738));
         setUndecorated(true);
-        setPreferredSize(new java.awt.Dimension(1368, 738));
         setResizable(false);
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
