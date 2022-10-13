@@ -209,6 +209,11 @@ public class Home extends javax.swing.JFrame {
         jLabel16.setForeground(new java.awt.Color(255, 255, 255));
         jLabel16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel16.setText("Settings");
+        jLabel16.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel16MouseClicked(evt);
+            }
+        });
 
         jLabel13.setBackground(new java.awt.Color(204, 204, 204));
         jLabel13.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -805,6 +810,10 @@ public class Home extends javax.swing.JFrame {
     private void lblAddress10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblAddress10MouseClicked
         // TODO add your handling code here:
     }//GEN-LAST:event_lblAddress10MouseClicked
+
+    private void jLabel16MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel16MouseClicked
+        new Settings().setVisible(true); 
+    }//GEN-LAST:event_jLabel16MouseClicked
 
     /**
      * @param args the command line arguments

@@ -6,6 +6,7 @@
 package com.pha.dao;
 
 import com.pha.model.settings;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 /**
@@ -18,6 +19,8 @@ public interface adminSettingDao {
     
     boolean updateSetting(settings s) throws SQLException;
     
-    boolean getSettingByAttribute(String attribute,String conditions,String value)throws SQLException;
+    ResultSet getSettingByAttribute(String attribute,String conditions,String value)throws SQLException;
+    
+    settings getSettingsObjectById(int id)throws SQLException;
     
 }

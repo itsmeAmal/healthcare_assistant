@@ -15,11 +15,12 @@ import java.sql.SQLException;
  */
 public class SettingController {
     
-    boolean updateSetting(String value, int id)throws SQLException{
+    public static boolean updateSetting(String value, int id)throws SQLException{
         settings s = new settings();
         s.setId(id);
         s.setSettingValue(value);
         return new SettingsDaoImpl().updateSetting(s);
     }
+    
     
 }

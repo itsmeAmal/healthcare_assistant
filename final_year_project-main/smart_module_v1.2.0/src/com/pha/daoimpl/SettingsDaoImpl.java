@@ -10,6 +10,7 @@ import com.pha.dao.adminSettingDao;
 import com.pha.model.settings;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 /**
@@ -17,6 +18,8 @@ import java.sql.SQLException;
  * @author malaa
  */
 public class SettingsDaoImpl implements adminSettingDao{
+    
+    private String selectQuery =  "select id, setting_code, setting_name, setting_value, remark from settings";
 
     @Override
     public boolean addSetting(settings s) throws SQLException {
@@ -39,8 +42,25 @@ public class SettingsDaoImpl implements adminSettingDao{
     }
 
     @Override
-    public boolean getSettingByAttribute(String attribute, String conditions, String value) throws SQLException {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public ResultSet getSettingByAttribute(String attribute, String conditions, String value) throws SQLException {
+         return new CommonDaoImpl().getResultByAttribute(selectQuery, attribute, conditions, value);
     }
+
+    @Override
+    public settings getSettingsObjectById(int id) throws SQLException {
+       ResultSet rset = getSettingByAttribute("id", " = ", Integer.toString(id));
+       settings s = null;
+        while (rset.next()) {            
+            s = new settings();
+            s.setId(rset.getInt("id"));
+            s.setRemark(rset.getString("remark"));
+            s.setSettingCode(rset.getString("setting_code"));
+            s.setSettingName(rset.getString("setting_name"));
+            s.setSettingValue(rset.getString("setting_value"));
+        }
+                    return s;
+    }
+    
+    
     
 }
