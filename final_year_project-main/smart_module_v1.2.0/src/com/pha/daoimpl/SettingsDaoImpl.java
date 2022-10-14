@@ -17,9 +17,9 @@ import java.sql.SQLException;
  *
  * @author malaa
  */
-public class SettingsDaoImpl implements adminSettingDao{
-    
-    private String selectQuery =  "select id, setting_code, setting_name, setting_value, remark from settings";
+public class SettingsDaoImpl implements adminSettingDao {
+
+    private String selectQuery = "select id, setting_code, setting_name, setting_value, remark from settings";
 
     @Override
     public boolean addSetting(settings s) throws SQLException {
@@ -43,14 +43,14 @@ public class SettingsDaoImpl implements adminSettingDao{
 
     @Override
     public ResultSet getSettingByAttribute(String attribute, String conditions, String value) throws SQLException {
-         return new CommonDaoImpl().getResultByAttribute(selectQuery, attribute, conditions, value);
+        return new CommonDaoImpl().getResultByAttribute(selectQuery, attribute, conditions, value);
     }
 
     @Override
     public settings getSettingsObjectById(int id) throws SQLException {
-       ResultSet rset = getSettingByAttribute("id", " = ", Integer.toString(id));
-       settings s = null;
-        while (rset.next()) {            
+        ResultSet rset = getSettingByAttribute("id", " = ", Integer.toString(id));
+        settings s = null;
+        while (rset.next()) {
             s = new settings();
             s.setId(rset.getInt("id"));
             s.setRemark(rset.getString("remark"));
@@ -58,9 +58,6 @@ public class SettingsDaoImpl implements adminSettingDao{
             s.setSettingName(rset.getString("setting_name"));
             s.setSettingValue(rset.getString("setting_value"));
         }
-                    return s;
+        return s;
     }
-    
-    
-    
 }

@@ -6,10 +6,12 @@
 package swing_ui_practice;
 
 import com.pha.control.SettingController;
+import com.pha.daoimpl.SettingsDaoImpl;
+import com.pha.model.settings;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -22,9 +24,10 @@ public class Settings extends javax.swing.JFrame {
      */
     public Settings() {
         initComponents();
+        getAndSetSettings();
     }
-    
-    private void updateSettings(){
+
+    private void updateSettings() {
         try {
             SettingController.updateSetting(txtNumber.getText(), 1);
             SettingController.updateSetting(txtRate.getText(), 2);
@@ -32,11 +35,19 @@ public class Settings extends javax.swing.JFrame {
             Logger.getLogger(Settings.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-    
-    private void setData(){
-    
-    }
 
+    private void getAndSetSettings() {
+        try {
+            settings numberSetting = new SettingsDaoImpl().getSettingsObjectById(1);
+            settings rate = new SettingsDaoImpl().getSettingsObjectById(2);
+
+            txtNumber.setText(numberSetting.getSettingValue());
+            txtRate.setText(rate.getSettingValue());
+
+        } catch (SQLException ex) {
+            Logger.getLogger(Settings.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -103,6 +114,7 @@ public class Settings extends javax.swing.JFrame {
             }
         });
 
+        txtNumber.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
         txtNumber.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 51, 255), 1, true), "", javax.swing.border.TitledBorder.LEFT, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12), new java.awt.Color(0, 51, 255))); // NOI18N
         txtNumber.setMaximumSize(new java.awt.Dimension(48, 267));
         txtNumber.addActionListener(new java.awt.event.ActionListener() {
@@ -111,6 +123,7 @@ public class Settings extends javax.swing.JFrame {
             }
         });
 
+        txtRate.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
         txtRate.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 51, 255), 1, true), "", javax.swing.border.TitledBorder.LEFT, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12), new java.awt.Color(0, 51, 255))); // NOI18N
         txtRate.setMaximumSize(new java.awt.Dimension(48, 267));
         txtRate.addActionListener(new java.awt.event.ActionListener() {
@@ -193,6 +206,8 @@ public class Settings extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         updateSettings();
+        getAndSetSettings();
+        JOptionPane.showMessageDialog(this, "Settings updated successfully !");
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
