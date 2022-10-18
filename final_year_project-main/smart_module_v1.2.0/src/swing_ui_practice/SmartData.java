@@ -36,9 +36,9 @@ public class SmartData extends javax.swing.JFrame {
         jButton3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setTitle("Guardian Management");
-        setAlwaysOnTop(true);
-        setMinimumSize(new java.awt.Dimension(509, 441));
+        setTitle("Smart Data");
+        setMaximumSize(new java.awt.Dimension(509, 368));
+        setMinimumSize(new java.awt.Dimension(509, 368));
         setUndecorated(true);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
@@ -143,7 +143,8 @@ public class SmartData extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
+       new BodyTemp().setVisible(true); 
+       this.dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
