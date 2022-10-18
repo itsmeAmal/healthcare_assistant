@@ -756,7 +756,7 @@ public class Home extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabel13MouseClicked
 
     private void jLabel14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel14MouseClicked
-        new SensorData().setVisible(true);
+        new SmartData().setVisible(true);
     }//GEN-LAST:event_jLabel14MouseClicked
 
     private void lblAddressMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblAddressMouseClicked
@@ -812,7 +812,7 @@ public class Home extends javax.swing.JFrame {
     }//GEN-LAST:event_lblAddress10MouseClicked
 
     private void jLabel16MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel16MouseClicked
-        new Settings().setVisible(true); 
+        new Settings().setVisible(true);
     }//GEN-LAST:event_jLabel16MouseClicked
 
     /**

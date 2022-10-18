@@ -360,7 +360,7 @@ public class Guardian extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabel13MouseClicked
 
     private void jLabel14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel14MouseClicked
-        new SensorData().setVisible(true);
+        new BodyTemp().setVisible(true);
     }//GEN-LAST:event_jLabel14MouseClicked
 
     private void jLabel12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel12MouseClicked
