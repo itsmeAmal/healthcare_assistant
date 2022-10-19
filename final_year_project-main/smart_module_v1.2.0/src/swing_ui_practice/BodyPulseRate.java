@@ -37,7 +37,7 @@ public class BodyPulseRate extends javax.swing.JFrame {
     private void loadTableAllData(){
         try {
             ResultSet rset = SDController.getAllRecords();
-            String[] columnList = {"id", "create_on", "temp_decimal"};
+            String[] columnList = {"id", "create_on", "pulse_rate_decimal"};
             CommonController.loadDataToTable(tblTemperature, rset, columnList);
             
         } catch (SQLException ex) {
@@ -82,7 +82,7 @@ public class BodyPulseRate extends javax.swing.JFrame {
 
             },
             new String [] {
-                "id", "Date and Time", "Temp"
+                "id", "Date and Time", "Pulse Rate"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -107,10 +107,10 @@ public class BodyPulseRate extends javax.swing.JFrame {
         jLabel4.setBackground(new java.awt.Color(153, 204, 255));
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("Body Temperature - Change Log");
+        jLabel4.setText("Pulse Rate - Change Log");
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 366, 262, 24));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img4/temp-graph.jpg"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img4/p_rate_1.jpg"))); // NOI18N
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 18, -1, -1));
 
         jLabel5.setBackground(new java.awt.Color(153, 204, 255));

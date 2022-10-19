@@ -67,7 +67,7 @@
                   <Table columnCount="3" rowCount="0">
                     <Column editable="false" title="id" type="java.lang.Object"/>
                     <Column editable="false" title="Date and Time" type="java.lang.Object"/>
-                    <Column editable="false" title="Temp" type="java.lang.Object"/>
+                    <Column editable="false" title="Pulse Rate" type="java.lang.Object"/>
                   </Table>
                 </Property>
                 <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
@@ -107,7 +107,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Body Temperature - Change Log"/>
+            <Property name="text" type="java.lang.String" value="Pulse Rate - Change Log"/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -118,7 +118,7 @@
         <Component class="javax.swing.JLabel" name="jLabel1">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/img4/temp-graph.jpg"/>
+              <Image iconType="3" name="/img4/p_rate_1.jpg"/>
             </Property>
           </Properties>
           <Constraints>
