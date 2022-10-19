@@ -22,7 +22,7 @@ public class sensorDataDaoImpl implements sensorDataDao{
     
     private String selectQuery = "select id, patient_id, pulse_rate_string, pulse_rate_decimal, spo2_level_string, "
             + " spo2_level_decimal, temp_string, temp_decimal, status, remark, create_on, create_by, update_on, "
-            + " update_by, deleted_on, deleted_by sensor_data";
+            + " update_by, deleted_on, deleted_by from sensor_data";
 
     @Override
     public boolean addSensorData(sensorData sd) throws SQLException {
@@ -65,7 +65,7 @@ public class sensorDataDaoImpl implements sensorDataDao{
 
     @Override
     public ResultSet getSensordataByMoreAttribute(ArrayList<String[]> attributeConditionValueList, String operator) throws SQLException {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return new CommonDaoImpl().getResultByAttributesWithJoinOperator(selectQuery, attributeConditionValueList, operator);
     }
     
 }

@@ -5,8 +5,14 @@
  */
 package swing_ui_practice;
 
+import com.pha.control.CommonController;
+import com.pha.control.SDController;
 import com.pha.model.patient;
 import com.pha.util.initial;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -22,6 +28,21 @@ public class BodyTemp extends javax.swing.JFrame {
         //---------------------
         patient userMaster = initial.userMst;
         txtName.setText(userMaster.getName());
+        //id, patient_id, pulse_rate_string, pulse_rate_decimal, spo2_level_string, spo2_level_decimal, 
+        //temp_string, temp_decimal, status, remark, create_on, create_by, update_on, update_by, deleted_on, deleted_by
+        
+        loadTableAllData();
+    }
+    
+    private void loadTableAllData(){
+        try {
+            ResultSet rset = SDController.getAllRecords();
+            String[] columnList = {"id", "create_on", "temp_decimal"};
+            CommonController.loadDataToTable(tblTemperature, rset, columnList);
+            
+        } catch (SQLException ex) {
+            Logger.getLogger(BodyTemp.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
     /**
@@ -61,11 +82,11 @@ public class BodyTemp extends javax.swing.JFrame {
 
             },
             new String [] {
-                "id", "Date", "Time", "Temp"
+                "id", "Date and Time", "Temp"
             }
         ) {
             boolean[] canEdit = new boolean [] {
-                false, false, false, false
+                false, false, false
             };
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
@@ -77,6 +98,8 @@ public class BodyTemp extends javax.swing.JFrame {
             tblTemperature.getColumnModel().getColumn(0).setMinWidth(0);
             tblTemperature.getColumnModel().getColumn(0).setPreferredWidth(0);
             tblTemperature.getColumnModel().getColumn(0).setMaxWidth(0);
+            tblTemperature.getColumnModel().getColumn(1).setResizable(false);
+            tblTemperature.getColumnModel().getColumn(2).setResizable(false);
         }
 
         jLabel4.setBackground(new java.awt.Color(153, 204, 255));
